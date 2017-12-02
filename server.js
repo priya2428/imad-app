@@ -14,10 +14,10 @@ app.get('/ui/style.css', function (req, res) {
 });
 app.get('/one',function(req,res){
     res.send('article is being served');} )
-app.get('/one',function(req,res){
+app.get('/two',function(req,res){
     res.send('article is being served');} )
 
-app.get('/one',function(req,res){
+app.get('/three',function(req,res){
     res.send('article is being served');} )
 
 app.get('/ui/madi.png', function (req, res) {
