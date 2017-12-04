@@ -6,11 +6,11 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles={
-'articleOne':{ title:'article one|priya',heading:'article one',date:'sep 5,2016',content:`<p> this is my first article one content.this is my first article one content.
+'article-one':{ title:'article one|priya',heading:'article one',date:'sep 5,2016',content:`<p> this is my first article one content.this is my first article one content.
         this is my first article one content.this is my first article one content
         this is my first article one content.this is my first article one content.this is my first article one content</p>`},
         
- 'articleTwo':{ title:'article-two|priya',heading:'article two',date:'sep 5,2016',content:`<p> this is my first article one content.this is my first article one content.
+ 'article-two':{ title:'article-two|priya',heading:'article two',date:'sep 5,2016',content:`<p> this is my first article one content.this is my first article one content.
         this is my first article one content.this is my first article one content
         this is my first article one content.this is my first article one content.this is my first article one content</p>`}
 };
