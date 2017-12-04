@@ -17,8 +17,8 @@ app.get('/article-one',function(req,res){
     
 } );
     
-app.get('/two',function(req,res){
-    res.send('article is being served');} )
+app.get('/article-two',function(req,res){
+    res.sendFile(path.join(__dirnmae,'ui','article-two.html'));} )
 
 app.get('/three',function(req,res){
     res.send('article is being served');} )
