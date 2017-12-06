@@ -1,4 +1,6 @@
-//counter code
+//counter 
+var button=document.getElementById('counter');
+button.onclick=function(){
 var request= new xmlHttpRequest();
 request.onreadystatechange=function(){
 if (request.readystate===xmlHttpRequest.DONE){
@@ -6,9 +8,10 @@ if (request.readystate===xmlHttpRequest.DONE){
         request.responseText;
     }
 }
+
+};
 request.open('GET','http://priyadharshni2palani.imad.hasura-app.io/',true);
 request.send(null);
-
 };
 
 
