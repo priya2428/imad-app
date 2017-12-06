@@ -1,23 +1,18 @@
-//counter 
-var button=document.getElementById('counter');
+var button =document.getElementById('counter');
 button.onclick=function(){
-    
-var httprequest= new XMLHttpRequest();
-httprequest.onreadystatechange = function(){
-
-if (httprequest.readystate === XMLHttpRequest.DONE){
-
-    if(httprequest.status===200){
-       var counter= request.responseText;
-       var span=document.getElementById('count');
-       span.innerHTML=counter.toString();
-    }
-}
-
+    var request= new XMLHttpRequest();
+    request.onreadystatechange =function(){
+        if(request.readystatus===XMLHttpRequest.DONE){
+            if(request.status===200){
+                var counter=request.responseText;
+                var span=document.getElementById('count');
+                span.innerHTML=counter.toString();
+                
+            }
+        }
+    };
+    request.open('GET','http://priyadharshni2palani.imad.hasura-app.io/counter',true);
+    request.send(null);
 };
-httprequest.open('GET','http://priyadharshni2palani.imad.hasura-app.io/counter',true);
-httprequest.send(null);
-};
-
 
 
