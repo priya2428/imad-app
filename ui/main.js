@@ -1,10 +1,14 @@
 //counter code
-var button =document.getElementById('counter');
-var counter=0;
-button.onclick=function(){
-    counter=counter+1;
-    var span=document.getElementById('count');
-    span.innerHTML=counter.toString();
+var request= new xmlHttpRequest();
+request.onreadystatechange=function(){
+if (request.readystate===xmlHttpRequest.DONE){
+    if(request.status===200){
+        request.responseText;
+    }
+}
 };
+request.open('GET',"http://priyadharshni2palani.imad.hasura-app.io/counter");
+request.send(null);
+
 
 
