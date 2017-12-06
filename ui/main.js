@@ -9,8 +9,9 @@ button.onclick=function(){
             {
                 var counter=request.responseText;
                 var span=document.getElementById('count');
-    span.innerHTML=counter.toString();
+                span.innerHTML=counter.toString();
             }
+           
         }
     };
     request.open('GET','priyadharshni2palani.imad.hasura-app.io/counter',true);
