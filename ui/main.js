@@ -1,6 +1,4 @@
-console.log('Loaded!');
-alert('hi');
-console.log('absd');
+console.log('loaded');
 var element=document.getElementById('main-text');
 element.innerHTML ='new value';
 var img= document.getElementById('madi');
