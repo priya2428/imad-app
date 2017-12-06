@@ -6,9 +6,10 @@ if (request.readystate===xmlHttpRequest.DONE){
         request.responseText;
     }
 }
-};
 request.open('GET','http://priyadharshni2palani.imad.hasura-app.io/counter',true);
 request.send(null);
+
+};
 
 
 
