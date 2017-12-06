@@ -12,7 +12,7 @@ if (request.readystate===xmlHttpRequest.DONE){
 }
 
 };
-request.open('GET','http://priyadharshni2palani.imad.hasura-app.io/',true);
+request.open('GET','http://priyadharshni2palani.imad.hasura-app.io/counter',true);
 request.send(null);
 };
 
